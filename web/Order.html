@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainali Suppliers</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+
+        }
+
+        .left {
+            display: inline-block;
+
+            position: absolute;
+            left: 34px;
+            top: 10px;
+            width: 13%;
+            font-size: 20px;
+        }
+
+        .left img {
+            width: 150px;
+
+        }
+
+
+        .mid {
+
+            width: 45%;
+
+            margin: 12px auto;
+
+            top: 20px;
+
+
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 34px;
+            padding: 6px;
+            border: 6px solid black;
+            margin: 3px auto;
+        }
+
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 40px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+        }
+
+        .bottom {
+           
+            position: absolute;
+            width: 100%;
+            margin: 15px 15px 0px 15px;
+
+            padding: 10px 10px 0px 10px;
+
+        }
+
+        .form-group button {
+            display: block;
+            width: 23%;
+        }
+
+        .right {
+            position: absolute;
+            top: 250px;
+            right: 250px;
+            width: 200px;
+            height: 120px;
+            border: 2px solid white;
+        }
+
+        .right img {
+            width: 150px;
+        }
+
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+
+<header class="header">
+
+    <div class="left">
+        <img src="logo.png" alt="">
+        <div>Mainali Suppliers</div>
+
+    </div>
+
+
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Products list</a></li>
+            <li><a href="Order.html">Order</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- <div class="container">
+      <form action="index.php" method="post">
+         <div class="form-group">
+
+         
+            <label for="name"> Name</label>
+            <input type="text" id="name"  placeholder="Your name..">
+            <label for="fname"> Address</label>
+            <input type="text" id="Address"  placeholder="Your Address..">
+            <label for="fname"> Phone Number</label>
+            <input type="text" id="Phone Number" placeholder="Your Number..">
+            <label for="lname"> Select the product you want</label>
+            <select id="country" name="country">
+               <option value="गोलो गिट्टी"> गोलो गिट्टी</option>
+               <option value="प.बालुवा">प.बालुवा</option>
+               <option value="सो.ढुंगा">सो.ढुंगा</option>
+               <option value="वास बालुवा"> वास बालुवा</option>
+               <option value="क्रस गिट्टी">क्रस गिट्टी</option>
+               <option value="मिक्स गिट्टी">मिक्स गिट्टी</option>
+               <option value="जग ढुंगा">जग ढुंगा </option>
+               <option value="फुटाको ढुंगा">फुटाको ढुंगा</option>
+               <option value="कालो माटो">कालो माटो</option>
+               <option value=" रातो माटो"> रातो माटो </option>
+               <option value="मिक्स ग्रावेल">मिक्स ग्रावेल </option>
+               <option value="ग्रावेल">ग्रावेल</option>
+            </select>
+   
+            <label for="Vehicle">Vehicle</label>
+            <select id="Vehicle" name="Vehicle">
+               <option value="१० चक्के">१० चक्के</option>
+               <option value="६ चक्के">६ चक्के</option>
+               <option value="६ चक्के मिनी">६ चक्के मिनी</option>
+               <option value="ट्रयाक्टर">ट्रयाक्टर</option>
+            </select>
+   
+            <label for="Quality">Quality </label>
+            <input type="text" id="Quality" placeholder="eg.राम्रो , ठिकै ">
+           
+            <label for="Quality">Quantity </label>
+            <input type="text" id="Quality" placeholder="eg.१ टेलर अथवा १ टिपर">
+   
+   
+   
+   
+
+
+
+
+         <button type="submit" name="submit" class="btn btn-default">Submit</button>
+ -->
+
+    <div class="container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9jhj7vblyTGs_iaSiUse9GC_0aLzGcUSuOT2ESDAKJmmq-g/viewform?embedded=true" width="640" height="2146" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    </div>
+    </div>
+    <div class="right">
+        <p style="line-height:22px;">
+            <strong>
+                <img src="logo.png" alt="">
+                Mainali Suppliers
+
+                <br>
+                Ratnanagar-09 Mohana <br />
+                Tandi Chitwan <br> </strong>
+            <abbr title="Phone">Phone:</abbr> +056-563173 <br />
+            Email:mainalisuppliers.chitwan@gmail.com <br>
+            </address>
+            <img src="10chhake.jpg" alt="">
+            
+        </p>
+    </div>
+
+    <div id="map">
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+       <div class="bottom">
+        <div class="col-sm-8 col-sm-pull-4">
+            <p style="color:rgb(10, 6, 6);">2020. © All right reserved </br>Mainali Suppliers <br /> Ratnanagar-09, Tandi,
+              Chitwan </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-push-8">
+              <p style="color:rgb(0, 0, 0);">Developed by <a href="https://www.facebook.com/subarna.mainali.92"
+                  style="color:redwhite;font-weight:bold;" target="__parent">Subarna Mainali</a></br></p>
+       </div>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
